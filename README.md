@@ -18,7 +18,7 @@ This release is designed to work on Ubuntu 12.04 running the `linux-image-generi
 The following dependencies are required to build synsanity on Centos systems:
 ```
 sudo yum groupinstall 'Development Tools'
-sudo yum install pkgconfig dkms kernel-devel-$(uname -r) kernel-headers-$(uname -r) iptables-devel
+sudo yum install dkms kernel-devel-$(uname -r) kernel-headers-$(uname -r) iptables-devel
 ```
 
 The simplest way to build and install the modules is using `dkms`:
