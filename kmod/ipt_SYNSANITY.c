@@ -139,7 +139,7 @@ synsanity_nf_ct_delete_from_skb(struct sk_buff *skb)
 	if (!nf_ct_get_tuplepr(skb, skb_network_offset(skb), NFPROTO_IPV4, &tuple))
 		return;
 
-	thash = nf_conntrack_find_get(dev_net(skb->dev), NF_CT_DEFAULT_ZONE, &tuple);
+	thash = nf_conntrack_find_get(dev_net(skb->dev), &nf_ct_zone_dflt, &tuple);
 	if (!thash)
 		return;
 
