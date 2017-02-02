@@ -13,11 +13,8 @@ The following components make up synsanity and its supporting setup:
 
 ## Building
 
-This release is designed to work on Ubuntu 12.04 running the `linux-image-generic-lts-trusty` kernel (3.13.x), though it should also be possible to run on Trusty itself and other systems running 3.x kernels with very little modification.
+This release is designed to work on Ubuntu 12.04 running the `linux-image-generic-lts-trusty` kernel (3.13.x), though it should also be possible to run on Trusty itself and other systems running 3.x kernels with very little modification. This code is modified to run on Centos kernel.
 
-The following dependencies are required to build synsanity on Ubuntu systems:
-```
-sudo apt-get install build-essential pkg-config dkms linux-headers-$(uname -r) iptables-dev
 ```
 The following dependencies are required to build synsanity on Centos systems:
 ```
