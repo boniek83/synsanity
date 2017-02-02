@@ -19,6 +19,11 @@ The following dependencies are required to build synsanity on Ubuntu systems:
 ```
 sudo apt-get install build-essential pkg-config dkms linux-headers-$(uname -r) iptables-dev
 ```
+The following dependencies are required to build synsanity on Centos systems:
+```
+sudo yum groupinstall 'Development Tools'
+sudo yum install pkgconfig dkms kernel-devel-$(uname -r) kernel-headers-$(uname -r) iptables-devel
+```
 
 The simplest way to build and install the modules is using `dkms`:
 ```
